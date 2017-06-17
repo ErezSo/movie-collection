@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const MovieItem = ({ movie }) => (
   <div className="featured-movie">
@@ -14,7 +15,7 @@ const MovieItem = ({ movie }) => (
   </div>
 );
 
-FeaturedMovie.propTypes = {
+MovieItem.propTypes = {
   movie: PropTypes.shape({
     director: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

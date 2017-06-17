@@ -7,6 +7,8 @@ body {
 
 .App-header {
   background: #F44336;
+  text-align: center;
+  color: #fff;
 }
 
 .App-header a {
@@ -17,7 +19,7 @@ body {
 }
 
 .App-header h2 {
-  font-size: 32px;
+  /*font-size: 32px;*/
 }
 
 .App-header a:hover {
@@ -44,6 +46,7 @@ body {
 }
 
 .featured-movies__header {
+  text-align: center;  
   margin-bottom: 15px;
   margin-top: 60px;
 }

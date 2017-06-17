@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import './index.css';
-
+import { Route, Link } from 'react-router-dom';
 import Collection from './components/Collection';
-
-import Router from 'react-router/BrowserRouter';
-import Match from 'react-router/Match';
-import Link from 'react-router/Link';
+import MovieItem from './components/MovieItem';
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          <div className="App-header">
-            <h2>My Movie Collection</h2>
-            <Link to="/">Home</Link>
-          </div>
-
-          <div className="container">
-            <Match exactly pattern="/" component={Home} />
-          </div>
+      <div className="App">
+        <div className="App-header">
+          <h2>My Movie Collection</h2>
+          <Link to="/">Home</Link>
         </div>
-      </Router>
+        <div className="container">
+          <Route exact path="/" component={Collection} />
+          <Route path="/collection" component={Collection} />
+          <Route path="/movie/:id" component={MovieItem} />
+        </div>
+      </div>
     );
   }
 }
