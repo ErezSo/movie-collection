@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
-import './styles.css';
+import './index.css';
+
+import Collection from './components/Collection';
+
+import Router from 'react-router/BrowserRouter';
+import Match from 'react-router/Match';
+import Link from 'react-router/Link';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>My Movie Collection</h2>
+      <Router>
+        <div className="App">
+          <div className="App-header">
+            <h2>My Movie Collection</h2>
+            <Link to="/">Home</Link>
+          </div>
+
+          <div className="container">
+            <Match exactly pattern="/" component={Home} />
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
