@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route , Link } from 'react-router-dom'
-import Collection from './components/Collection';
+import Movies from './components/Movies';
 import MoviePage from './components/MoviePage';
 
 class App extends Component {
@@ -13,8 +13,8 @@ class App extends Component {
             <Link to="/">Home</Link>
           </div>
           <div className="container">
-            <Route exact path="/" component={Collection} />
-            <Route path="/collection" component={Collection} />
+            <Route exact path="/" component={Movies} />
+            <Route path="/collection" component={Movies} />
             <Route path="/movies/:id" component={MoviePage} />
           </div>
         </div>

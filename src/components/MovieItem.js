@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const MovieItem = ({ movie }) => (
-  <div className="featured-movie">
+  <div className="featured-movie" style={{ float: 'left' }}>
     <div className="featured-movie__image">
       <Link to={`/movies/${movie.id}`}>
         <img alt={movie.name} src={movie.image} />

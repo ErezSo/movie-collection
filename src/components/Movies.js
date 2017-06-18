@@ -2,16 +2,16 @@ import React from 'react';
 import movies from '../movies.json';
 import MovieItem from './MovieItem';
 
-const Collection = () => {
+const Movies = () => {
   return (
     <div>
-      <h2 className="featured-movies__header">
+      <h2 className="movies__header">
         Movies
       </h2>
 
       <hr />
 
-      <div className="featured-movies">
+      <div className="movies">
         {movies.map((movie, i) => (
           <MovieItem key={i} movie={movie} />
         ))}
@@ -20,4 +20,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default Movies;
