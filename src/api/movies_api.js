@@ -1,8 +1,3 @@
-const delay = 1;
-
-// This file mocks a web API by working with the hard-coded data below.
-// It uses setTimeout to simulate the delay of an AJAX call.
-// All calls return promises.
 const moviesArr = [
     {
         "id": 1,
@@ -43,8 +38,6 @@ if (!window.localStorage.movies) {
   window.localStorage.setItem('movies', JSON.stringify(moviesArr));
 }
 
-// const movies = JSON.parse(window.localStorage.getItem('movies'));
-
 function replaceAll(str, find, replace) {
   return str.replace(new RegExp(find, 'g'), replace);
 }
@@ -58,50 +51,35 @@ class MoviesApi {
   static getAllMovies() {
     return new Promise((resolve, reject) => {
       const movies = window.localStorage.getItem('movies');
-      // setTimeout(() => {
         resolve(Object.assign([], JSON.parse(movies)));
-      // }, delay);
     });
   }
 
   static saveMovies(movie) {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        // Simulate server-side validation
-        const minMovieTitleLength = 1;
-        if (movie.title.length < minMovieTitleLength) {
-          reject(`Title must be at least ${minMovieTitleLength} characters.`);
-        }
+      if (movie.id) {
+        // eslint-disable-next-line
+        const existingMovieIndex = movies.findIndex(a => a.id == movie.id);
+        window.localStorage.movies.splice(existingMovieIndex, 1, movie);
+      } else {
+        movie.id = generateId(movie);
+        window.localStorage.movies.push(movie);
+      }
 
-        if (movie.id) {
-          // eslint-disable-next-line
-          const existingMovieIndex = movies.findIndex(a => a.id == movie.id);
-          window.localStorage.movies.splice(existingMovieIndex, 1, movie);
-        } else {
-          //Just simulating creation here.
-          //The server would generate ids and watchHref's for new movies in a real app.
-          //Cloning so copy returned is passed by value rather than by reference.
-          movie.id = generateId(movie);
-          window.localStorage.movies.push(movie);
-        }
-
-        resolve(movie);
-      }, delay);
+      resolve(movie);
     });
   }
 
   static deleteMovie(movieId) {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
+      // eslint-disable-next-line
+      const indexOfMovieToDelete = movies.findIndex(movie => { 
         // eslint-disable-next-line
-        const indexOfMovieToDelete = movies.findIndex(movie => { 
-          // eslint-disable-next-line
-          movie.id == movieId;
-        });
-        window.localStorage.movies.splice(indexOfMovieToDelete, 1);
-        resolve();
-      }, delay);
+        movie.id == movieId;
+      });
+      window.localStorage.movies.splice(indexOfMovieToDelete, 1);
+      resolve();
     });
   }
 }
