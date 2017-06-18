@@ -1,12 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as movieActions from '../actions/movie_actions';
-// import movies from '../movies.json';
 import MovieItem from './MovieItem';
 
 const Movies = (props) => {
-  console.log('props', props)
   const { movies } = props;
   return (
     <div>
@@ -24,6 +23,10 @@ const Movies = (props) => {
     </div>
   );
 };
+
+Movies.propTypes = {
+  movies: PropTypes.array.isRequired
+}
 
 const mapStateToProps = (state, ownProps) => ({
   movies: state.movies

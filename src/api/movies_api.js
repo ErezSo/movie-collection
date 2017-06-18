@@ -3,7 +3,7 @@ const delay = 1;
 // This file mocks a web API by working with the hard-coded data below.
 // It uses setTimeout to simulate the delay of an AJAX call.
 // All calls return promises.
-const movies = [
+const moviesArr = [
     {
         "id": 1,
         "name": "The Hateful Eight",
@@ -38,6 +38,12 @@ const movies = [
     }
 ];
 
+// Save the movies array to localStorage as it's going to be our DB
+if (!window.localStorage.movies) {
+  window.localStorage.setItem('movies', JSON.stringify(moviesArr));
+}
+
+// const movies = JSON.parse(window.localStorage.getItem('movies'));
 
 function replaceAll(str, find, replace) {
   return str.replace(new RegExp(find, 'g'), replace);
@@ -51,9 +57,10 @@ const generateId = (movie) => {
 class MoviesApi {
   static getAllMovies() {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(Object.assign([], movies));
-      }, delay);
+      const movies = window.localStorage.getItem('movies');
+      // setTimeout(() => {
+        resolve(Object.assign([], JSON.parse(movies)));
+      // }, delay);
     });
   }
 
@@ -70,13 +77,13 @@ class MoviesApi {
         if (movie.id) {
           // eslint-disable-next-line
           const existingMovieIndex = movies.findIndex(a => a.id == movie.id);
-          movies.splice(existingMovieIndex, 1, movie);
+          window.localStorage.movies.splice(existingMovieIndex, 1, movie);
         } else {
           //Just simulating creation here.
           //The server would generate ids and watchHref's for new movies in a real app.
           //Cloning so copy returned is passed by value rather than by reference.
           movie.id = generateId(movie);
-          movies.push(movie);
+          window.localStorage.movies.push(movie);
         }
 
         resolve(movie);
@@ -92,7 +99,7 @@ class MoviesApi {
           // eslint-disable-next-line
           movie.id == movieId;
         });
-        movies.splice(indexOfMovieToDelete, 1);
+        window.localStorage.movies.splice(indexOfMovieToDelete, 1);
         resolve();
       }, delay);
     });
