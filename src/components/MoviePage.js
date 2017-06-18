@@ -20,7 +20,7 @@ const MoviePage = ({match}) => {
           <img src={movie.image} alt='' style={{width: '75%',height: 'auto' }}/>
         </div>
         
-        <div className="movie-information">
+        <div className="movie-information" style={{height: '100%'}}>
           <p><b>Director:</b> {movie.director}</p>
           <p><b>Release Date:</b> {movie.released}</p>
           <p><b>Description:</b> {movie.description} </p>

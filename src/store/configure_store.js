@@ -3,7 +3,7 @@ import rootReducer from '../reducers';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
 
-const configuredSore = (initialState) => {
+const configureSore = (initialState) => {
   return createStore(
     rootReducer,
     initialState,
@@ -11,4 +11,4 @@ const configuredSore = (initialState) => {
   );
 };
 
-export default configuredSore;
+export default configureSore;

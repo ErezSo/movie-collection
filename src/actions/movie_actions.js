@@ -1,8 +1,8 @@
 import * as types from './action_types';
 import moviesApi from '../api/movies_api';
 
-export function loadMoviesSuccess(Movies) {
-  return { type: types.LOAD_MOVIES_SUCCESS, Movies };
+export function loadMoviesSuccess(movies) {
+  return { type: types.LOAD_MOVIES_SUCCESS, movies };
 }
 
 export const loadMovies = () => {
@@ -14,14 +14,3 @@ export const loadMovies = () => {
     });
   };
 };
-
-// export const saveCourse = course => {
-//   return (dispatch, getState) => {
-//     return courseApi.saveCourse(course).then(savedCourse => {
-//       course.id ? dispatch(updareCourseSuccess(savedCourse)) :
-//         dispatch(createCourseSuccess(savedCourse));
-//     }).catch(error => {
-//       throw(error);
-//     });
-//   };
-// };

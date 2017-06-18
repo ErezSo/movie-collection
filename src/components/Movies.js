@@ -1,8 +1,13 @@
 import React from 'react';
-import movies from '../movies.json';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as movieActions from '../actions/movie_actions';
+// import movies from '../movies.json';
 import MovieItem from './MovieItem';
 
-const Movies = () => {
+const Movies = (props) => {
+  console.log('props', props)
+  const { movies } = props;
   return (
     <div>
       <h2 className="movies__header">
@@ -20,4 +25,12 @@ const Movies = () => {
   );
 };
 
-export default Movies;
+const mapStateToProps = (state, ownProps) => ({
+  movies: state.movies
+});
+
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(movieActions, dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Movies);

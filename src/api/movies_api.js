@@ -52,7 +52,7 @@ class MoviesApi {
   static getAllMovies() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(Object.assign([], courses));
+        resolve(Object.assign([], movies));
       }, delay);
     });
   }
@@ -68,6 +68,7 @@ class MoviesApi {
         }
 
         if (movie.id) {
+          // eslint-disable-next-line
           const existingMovieIndex = movies.findIndex(a => a.id == movie.id);
           movies.splice(existingMovieIndex, 1, movie);
         } else {
@@ -86,7 +87,9 @@ class MoviesApi {
   static deleteMovie(movieId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const indexOfMovieToDelete = movies.findIndex(movie => {
+        // eslint-disable-next-line
+        const indexOfMovieToDelete = movies.findIndex(movie => { 
+          // eslint-disable-next-line
           movie.id == movieId;
         });
         movies.splice(indexOfMovieToDelete, 1);
