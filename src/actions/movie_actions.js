@@ -1,8 +1,12 @@
 import * as types from './action_types';
 import moviesApi from '../api/movies_api';
 
-export function loadMoviesSuccess(movies) {
+export const loadMoviesSuccess = movies => {
   return { type: types.LOAD_MOVIES_SUCCESS, movies };
+}
+
+export const saveMovieSuccess = movie => {
+  return {tpye: types.SAVE_MOVIE_SUCCESS, movie}
 }
 
 export const loadMovies = () => {
@@ -14,3 +18,13 @@ export const loadMovies = () => {
     });
   };
 };
+
+export const saveMovie = (movie) => {
+  return dispatch => {
+    return moviesApi.saveMovie(movie).then(responseMovie => {
+      dispatch(saveMovieSuccess(responseMovie));
+    }).catch(error => {
+      throw(error);
+    })
+  }
+}

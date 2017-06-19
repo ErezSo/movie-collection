@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as movieActions from '../actions/movie_actions';
+import MovieForm from './MovieForm';
 
 class MoviePage extends React.Component {
   state = {
@@ -21,34 +22,57 @@ class MoviePage extends React.Component {
     this.setState(prevState => ({ isEditing: !prevState.isEditing }))
   }
 
+  deleteMovie = () => {
+  }
+
+  uploadImage = () => {
+  }
+
+  updateMovieState = (event) => {
+    const field = event.target.name;
+    let movie = this.state.movie;
+    movie[field] = event.target.value;
+    return this.setState({movie});
+  }
+
+  updateMovie = event => {
+    event.prevenetDefault();
+    this.props.actions.saveMovie(this.state.movie);
+  }
+
   render() {
-    const { movie } = this.props;
+    const { movie } = this.state;
     if (this.state.isEditing) {
       return (
         <div>
           <h1>edit movie</h1>
-          {/*< movie form coming soon!/> */}
+          <MovieForm 
+            movie={movie}
+            onSave={this.updateMovie}
+            onChange={this.updateMovieState} />
         </div>
       )
     }
     return (
       <div>
         <div className="movie-title">
-          <h2>{movie.name}</h2>
+          <h2>{this.props.movie.name}</h2>
 
           <hr />
         </div>
 
         <div className="movie-container">
           <div className="movie-image">
-            <img src={movie.image} alt='' style={{ width: '75%', height: 'auto' }} />
+            <img src={this.props.movie.image} alt='' style={{ width: '75%', height: 'auto' }} />
           </div>
 
           <div className="movie-information" style={{ height: '100%' }}>
-            <p><b>Director:</b> {movie.director}</p>
-            <p><b>Release Date:</b> {movie.released}</p>
-            <p><b>Description:</b> {movie.description} </p>
-            <button className="btn btn-primary" onClick={this.toggleEdit}>Edit</button>
+            <p><b>Director:</b> {this.props.movie.director}</p>
+            <p><b>Release Date:</b> {this.props.movie.released}</p>
+            <p><b>Description:</b> {this.props.movie.description} </p>
+            <button className="btn btn-default" onClick={this.toggleEdit}>Edit</button>
+            <button className="btn btn-success" onClick={this.uploadImage}>Upload image</button>
+            <button className="btn btn-danger" onClick={this.deleteMovie}>Delete</button>
           </div>
         </div>
       </div>
@@ -58,6 +82,7 @@ class MoviePage extends React.Component {
 
 MoviePage.propTypes = {
   movie: PropTypes.object.isRequired,
+  actions: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
