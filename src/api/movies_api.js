@@ -59,8 +59,7 @@ class MoviesApi {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
       if (movie.id) {
-        // eslint-disable-next-line
-        const existingMovieIndex = movies.findIndex(a => a.id == movie.id);
+        const existingMovieIndex = window.localStorage.movies.findIndex(a => parseInt(a.id, 10) === movie.id);
         window.localStorage.movies.splice(existingMovieIndex, 1, movie);
       } else {
         movie.id = generateId(movie);
@@ -73,11 +72,9 @@ class MoviesApi {
 
   static deleteMovie(movieId) {
     return new Promise((resolve, reject) => {
-      // eslint-disable-next-line
-      const indexOfMovieToDelete = movies.findIndex(movie => { 
-        // eslint-disable-next-line
-        movie.id == movieId;
-      });
+      const indexOfMovieToDelete = window.localStorage.movies.findIndex(movie =>  
+        parseInt(movie.id, 10) === movieId
+      );
       window.localStorage.movies.splice(indexOfMovieToDelete, 1);
       resolve();
     });
