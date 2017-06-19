@@ -51,7 +51,7 @@ class MoviesApi {
   static getAllMovies() {
     return new Promise((resolve, reject) => {
       const movies = window.localStorage.getItem('movies');
-        resolve(Object.assign([], JSON.parse(movies)));
+      resolve(Object.assign([], JSON.parse(movies)));
     });
   }
 
