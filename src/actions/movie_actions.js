@@ -6,7 +6,7 @@ export const loadMoviesSuccess = movies => {
 }
 
 export const saveMovieSuccess = movie => {
-  return {tpye: types.SAVE_MOVIE_SUCCESS, movie}
+  return {type: types.SAVE_MOVIE_SUCCESS, movie}
 }
 
 export const loadMovies = () => {
@@ -21,7 +21,7 @@ export const loadMovies = () => {
 
 export const saveMovie = (movie) => {
   return dispatch => {
-    return moviesApi.saveMovie(movie).then(responseMovie => {
+    return moviesApi.saveMovies(movie).then(responseMovie => {
       dispatch(saveMovieSuccess(responseMovie));
     }).catch(error => {
       throw(error);

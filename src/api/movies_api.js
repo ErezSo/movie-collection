@@ -33,6 +33,8 @@ const moviesArr = [
     }
 ];
 
+// window.localStorage.removeItem('movies');
+
 // Save the movies array to localStorage as it's going to be our DB
 if (!window.localStorage.movies) {
   window.localStorage.setItem('movies', JSON.stringify(moviesArr));
@@ -59,11 +61,17 @@ class MoviesApi {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
       if (movie.id) {
-        const existingMovieIndex = window.localStorage.movies.findIndex(a => parseInt(a.id, 10) === movie.id);
-        window.localStorage.movies.splice(existingMovieIndex, 1, movie);
+        let moviesArrCopy = JSON.parse(window.localStorage.movies);
+        const existingMovieIndex = moviesArr.findIndex(a => parseInt(a.id, 10) === movie.id);
+        moviesArrCopy.splice(existingMovieIndex, 1, movie);
+        window.localStorage.removeItem('movies');
+        window.localStorage.setItem('movies', JSON.stringify(moviesArrCopy));
       } else {
+        const moviesArrCopy = JSON.parse(window.localStorage.movies);        
         movie.id = generateId(movie);
-        window.localStorage.movies.push(movie);
+        const newMoviesArr = moviesArrCopy.concat(movie);
+        window.localStorage.removeItem('movies');
+        window.localStorage.setItem('movies', JSON.stringify(newMoviesArr));
       }
 
       resolve(movie);

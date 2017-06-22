@@ -36,8 +36,9 @@ class MoviePage extends React.Component {
   }
 
   updateMovie = event => {
-    event.prevenetDefault();
+    event.preventDefault();
     this.props.actions.saveMovie(this.state.movie);
+    this.toggleEdit();
   }
 
   render() {
@@ -45,7 +46,6 @@ class MoviePage extends React.Component {
     if (this.state.isEditing) {
       return (
         <div>
-          <h1>edit movie</h1>
           <MovieForm 
             movie={movie}
             onSave={this.updateMovie}

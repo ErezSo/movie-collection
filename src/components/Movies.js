@@ -7,6 +7,7 @@ import MovieItem from './MovieItem';
 
 class Movies extends React.Component {
   render() {
+    console.log('props  ', this.props)
     const { movies } = this.props;
     return (
       <div>
