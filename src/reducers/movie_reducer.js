@@ -23,9 +23,16 @@ const movieReducer = (state = initialState.movies, action) => {
       ];
 
     case types.DELETE_MOVIE_SUCCESS:
-      return [
-        ...state.filter(movie => movie.id !== action.movie.id)
-      ];
+      // return [
+      //   ...state.filter(movie => movie.id !== action.movie.id)
+      // ];
+      const newState = Object.assign([], state);
+      const indexOfMovieToDelete = state.findIndex(movie => {
+        return movie.id === action.movie.id
+      })
+      newState.splice(indexOfMovieToDelete, 1);
+      history.push('/');
+      return newState;
 
     default:
       return state;
