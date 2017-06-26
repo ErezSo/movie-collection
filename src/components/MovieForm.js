@@ -5,7 +5,6 @@ import TextInput from './common/TextInput';
 const MovieForm = ({movie, onSave, onChange}) => {
   return (
     <form>
-      <h1>Manage Course</h1>
       <TextInput 
         name="name"
         label="Movie"

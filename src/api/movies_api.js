@@ -33,20 +33,18 @@ const moviesArr = [
     }
 ];
 
-// window.localStorage.removeItem('movies');
+/**
+ * Remove false in signature to reset localStorage from the existing movies object
+ */
+resetLocalStorageMovies(false);
 
 // Save the movies array to localStorage as it's going to be our DB
 if (!window.localStorage.movies) {
   window.localStorage.setItem('movies', JSON.stringify(moviesArr));
 }
 
-function replaceAll(str, find, replace) {
-  return str.replace(new RegExp(find, 'g'), replace);
-}
-
-//This would be performed on the server in a real app. Just stubbing in.
 const generateId = (movie) => {
-  return replaceAll(movie.title, ' ', '-');
+  return new Date().getTime();
 };
 
 class MoviesApi {
@@ -60,12 +58,16 @@ class MoviesApi {
   static saveMovies(movie) {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
+
+      // Update existing movie
       if (movie.id) {
         let moviesArrCopy = JSON.parse(window.localStorage.movies);
         const existingMovieIndex = moviesArr.findIndex(a => parseInt(a.id, 10) === movie.id);
         moviesArrCopy.splice(existingMovieIndex, 1, movie);
         window.localStorage.removeItem('movies');
         window.localStorage.setItem('movies', JSON.stringify(moviesArrCopy));
+
+      // Create new movie
       } else {
         const moviesArrCopy = JSON.parse(window.localStorage.movies);        
         movie.id = generateId(movie);
@@ -80,13 +82,22 @@ class MoviesApi {
 
   static deleteMovie(movieId) {
     return new Promise((resolve, reject) => {
-      const indexOfMovieToDelete = window.localStorage.movies.findIndex(movie =>  
+      const moviesArrCopy = JSON.parse(window.localStorage.movies);        
+      const indexOfMovieToDelete = moviesArrCopy.findIndex(movie =>  
         parseInt(movie.id, 10) === movieId
       );
-      window.localStorage.movies.splice(indexOfMovieToDelete, 1);
+      const newMoviesArr = moviesArrCopy.splice(indexOfMovieToDelete, 1);
+      window.localStorage.removeItem('movies');
+      window.localStorage.setItem('movies', JSON.stringify(newMoviesArr));
       resolve();
     });
   }
 }
+
+function resetLocalStorageMovies(go = 'go') { 
+  if (go !== false) {
+    window.localStorage.removeItem('movies')
+  }
+};
 
 export default MoviesApi;

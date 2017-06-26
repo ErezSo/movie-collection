@@ -5,8 +5,16 @@ export const loadMoviesSuccess = movies => {
   return { type: types.LOAD_MOVIES_SUCCESS, movies };
 }
 
-export const saveMovieSuccess = movie => {
-  return {type: types.SAVE_MOVIE_SUCCESS, movie}
+export const createMovieSuccess = movie => {
+  return {type: types.CREATE_MOVIE_SUCCESS, movie}
+}
+
+export const updateMovieSuccess = movie => {
+  return {type: types.UPDATE_MOVIE_SUCCESS, movie}
+}
+
+export const deleteMovieSuccess = movie => {
+  return {type: types.DELETE_MOVIE_SUCCESS, movie}
 }
 
 export const loadMovies = () => {
@@ -19,10 +27,30 @@ export const loadMovies = () => {
   };
 };
 
-export const saveMovie = (movie) => {
+export const createMovie = (movie) => {
   return dispatch => {
     return moviesApi.saveMovies(movie).then(responseMovie => {
-      dispatch(saveMovieSuccess(responseMovie));
+      dispatch(createMovieSuccess(responseMovie));
+    }).catch(error => {
+      throw(error);
+    })
+  }
+}
+
+export const updateMovie = (movie) => {
+  return dispatch => {
+    return moviesApi.saveMovies(movie).then(responseMovie => {
+      dispatch(updateMovieSuccess(responseMovie));
+    }).catch(error => {
+      throw(error);
+    })
+  }
+}
+
+export const deleteMovie = (movie) => {
+  return dispatch => {
+    return moviesApi.deleteMovie(movie).then(responseMovie => {
+      dispatch(deleteMovieSuccess(responseMovie));
     }).catch(error => {
       throw(error);
     })

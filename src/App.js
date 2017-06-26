@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route , Link } from 'react-router-dom'
 import Movies from './components/Movies';
 import MoviePage from './components/MoviePage';
+import NewMoviePage from './components/NewMoviePage';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <div className="movies-container">
             <Route exact path="/" component={Movies} />
             <Route path="/collection" component={Movies} />
+            <Route path="/movies/new" component={NewMoviePage} />
             <Route path="/movies/:id" component={MoviePage} />
           </div>
         </div>

@@ -23,7 +23,7 @@ MovieItem.propTypes = {
     director: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     released: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    image: PropTypes.string,
   }).isRequired,
 };
 

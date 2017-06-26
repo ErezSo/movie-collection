@@ -23,6 +23,7 @@ class MoviePage extends React.Component {
   }
 
   deleteMovie = () => {
+    this.props.actions.deleteMovie(this.state.movie);
   }
 
   uploadImage = () => {
@@ -37,7 +38,7 @@ class MoviePage extends React.Component {
 
   updateMovie = event => {
     event.preventDefault();
-    this.props.actions.saveMovie(this.state.movie);
+    this.props.actions.updateMovie(this.state.movie);
     this.toggleEdit();
   }
 
@@ -89,7 +90,7 @@ const mapStateToProps = (state, ownProps) => {
   let movie = { name: '', image: '', director: '', released: '', description: '' };
   const movieId = ownProps.match.params.id;
   if (state.movies.length > 0) {
-    movie = Object.assign({}, state.movies.find(movies => movies.id === parseInt(movieId, 10)))
+    movie = Object.assign({}, state.movies.find(movie => movie.id === parseInt(movieId, 10)))
   }
   return { movie }
 };
