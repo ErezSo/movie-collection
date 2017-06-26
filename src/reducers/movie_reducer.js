@@ -24,8 +24,7 @@ const movieReducer = (state = initialState.movies, action) => {
 
     case types.DELETE_MOVIE_SUCCESS:
       return [
-        ...state,
-        Object.assign({}, action.movie)
+        ...state.filter(movie => movie.id !== action.movie.id)
       ];
 
     default:

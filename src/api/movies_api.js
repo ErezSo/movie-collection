@@ -80,11 +80,11 @@ class MoviesApi {
     });
   }
 
-  static deleteMovie(movieId) {
+  static deleteMovie(movie) {
     return new Promise((resolve, reject) => {
       const moviesArrCopy = JSON.parse(window.localStorage.movies);        
       const indexOfMovieToDelete = moviesArrCopy.findIndex(movie =>  
-        parseInt(movie.id, 10) === movieId
+        parseInt(movie.id, 10) === movie.id
       );
       const newMoviesArr = moviesArrCopy.splice(indexOfMovieToDelete, 1);
       window.localStorage.removeItem('movies');

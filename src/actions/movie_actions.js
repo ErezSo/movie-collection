@@ -49,8 +49,8 @@ export const updateMovie = (movie) => {
 
 export const deleteMovie = (movie) => {
   return dispatch => {
-    return moviesApi.deleteMovie(movie).then(responseMovie => {
-      dispatch(deleteMovieSuccess(responseMovie));
+    return moviesApi.deleteMovie(movie).then(() => {
+      dispatch(deleteMovieSuccess(movie));
     }).catch(error => {
       throw(error);
     })
