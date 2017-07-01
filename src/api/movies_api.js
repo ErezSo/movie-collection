@@ -33,10 +33,12 @@ const moviesArr = [
   }
 ];
 
+const placeholderImg = 'https://upload.wikimedia.org/wikipedia/en/f/f9/No-image-available.jpg'
+
 /**
  * Remove false in signature to reset localStorage from the existing movies object
  */
-resetLocalStorageMovies(false);
+resetLocalStorageMovies();
 
 // Save the movies array to localStorage as it's going to be our DB
 if (!window.localStorage.movies) {
@@ -62,7 +64,7 @@ class MoviesApi {
   static saveMovies(movie) {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
-
+      movie.image = movie.image || placeholderImg;
       // Update existing movie
       if (movie.id) {
         let moviesArrCopy = JSON.parse(window.localStorage.movies);
