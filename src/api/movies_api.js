@@ -49,7 +49,6 @@ class MoviesApi {
   static getAllMovies() {
     return new Promise((resolve, reject) => {
       const movies = getMoviesParsed();
-      console.log('movies', movies)
       resolve(Object.assign([], movies));
     });
   }

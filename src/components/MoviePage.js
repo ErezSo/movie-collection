@@ -24,6 +24,7 @@ class MoviePage extends React.Component {
 
   deleteMovie = () => {
     this.props.actions.deleteMovie(this.state.movie);
+    this.props.history.push('/')
   }
 
   uploadImage = () => {
