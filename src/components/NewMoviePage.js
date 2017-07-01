@@ -4,17 +4,25 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as movieActions from '../actions/movie_actions';
 import MovieForm from './MovieForm';
+import moviesApi from '../api/movies_api';
 
 class NewMoviePage extends React.Component {
   state = {
     movie: {
-      id: 0,
+      newId: 0,
       name: '',
       director: '',
       released: '',
       description: ''
     },
     saving: false
+  }
+
+  componentWillMount() {
+    let movie = this.state.movie;
+    const id = moviesApi.generateId();
+    movie.newId = id;
+    this.setState({ movie });
   }
 
   updateMovieState = (event) => {
@@ -27,6 +35,7 @@ class NewMoviePage extends React.Component {
   createMovie = event => {
     event.preventDefault();
     this.props.actions.createMovie(this.state.movie);
+    this.props.history.push(`/movies/${this.state.movie.newId}`)
   }
 
   render() {
@@ -47,8 +56,13 @@ NewMoviePage.propTypes = {
   actions: PropTypes.object.isRequired
 }
 
+// Pull in the React Router context so router is available on this.context.router
+NewMoviePage.contextTypes = {
+  router: PropTypes.object
+}
+
 const mapStateToProps = (state, ownProps) => {
-  let movie = { id: 0, name: '', director: '', released: '', description: '' };
+  let movie = { newId: 0, name: '', director: '', released: '', description: '' };
   const movieId = movie.params ? ownProps.params.id : undefined;
   if (movieId && state.movies.length > 0) {
     movie = Object.assign({}, state.movies.find(movies => movies.id === parseInt(movieId, 10)))
