@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TextInput from './common/TextInput';
+import Textarea from './common/Textarea';
 
 const MovieForm = ({movie, onSave, onChange}) => {
   return (
-    <form>
+    <form className="container">
       <TextInput 
         name="name"
         label="Movie"
@@ -24,6 +25,12 @@ const MovieForm = ({movie, onSave, onChange}) => {
         onChange={onChange} />
 
       <TextInput
+        name="image"
+        label="Image URL"
+        value={movie.image}
+        onChange={onChange} />
+
+      <Textarea
         name="description"
         label="Description"
         value={movie.description}

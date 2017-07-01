@@ -60,7 +60,7 @@ class MoviesApi {
 
   static generateId = (movie) => {
     const movies = getMoviesParsed();
-    const lastId = movies[movies.length - 1].id;
+    const lastId = movies.length ? movies[movies.length - 1].id : 0;
     return lastId + 1;
   };
 
@@ -68,7 +68,7 @@ class MoviesApi {
     movie = Object.assign({}, movie); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
       
-      //Set default image
+      //Set image
       movie.image = movie.image || placeholderImg;
 
       // Update existing movie

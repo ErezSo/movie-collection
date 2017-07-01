@@ -8,14 +8,15 @@ const TextInput = ({name, label, onChange, placeholder, value}) => {
     <div className={wrapperClass}>
       <label htmlFor="{name}">{label}</label>
       <div className="field">
-        <input 
+        <textarea 
           type="text"
           name={name}
           className="form-control"
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          style={{width: '30%'}} />
+          style={{width: '60%'}} 
+          rows="10" />
       </div>
     </div>
   );

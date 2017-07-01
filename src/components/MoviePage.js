@@ -27,9 +27,6 @@ class MoviePage extends React.Component {
     this.props.history.push('/')
   }
 
-  uploadImage = () => {
-  }
-
   updateMovieState = (event) => {
     const field = event.target.name;
     let movie = this.state.movie;
@@ -73,7 +70,6 @@ class MoviePage extends React.Component {
             <p><b>Release Date:</b> {this.props.movie.released}</p>
             <p><b>Description:</b> {this.props.movie.description} </p>
             <button className="btn btn-default" onClick={this.toggleEdit}>Edit</button>
-            <button className="btn btn-success" onClick={this.uploadImage}>Upload image</button>
             <button className="btn btn-danger" onClick={this.deleteMovie}>Delete</button>
           </div>
         </div>

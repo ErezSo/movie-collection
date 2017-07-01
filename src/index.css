@@ -112,3 +112,7 @@ hr {
 .movie-listings .movie-image {
   padding-right: 6px;
 }
+
+.btn {
+  margin-right: 0.5em;
+}
