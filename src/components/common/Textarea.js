@@ -1,22 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const TextInput = ({name, label, onChange, placeholder, value}) => {
-  let wrapperClass = 'form-group';
-  
+const TextInput = ({ name, label, onChange, placeholder, value }) => {
+  let wrapperClass = "form-group";
+
   return (
     <div className={wrapperClass}>
-      <label htmlFor="{name}">{label}</label>
+      <label htmlFor="{name}">
+        {label}
+      </label>
       <div className="field">
-        <textarea 
+        <textarea
           type="text"
           name={name}
           className="form-control"
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          style={{width: '60%'}} 
-          rows="10" />
+          style={{ width: "60%" }}
+          rows="10"
+        />
       </div>
     </div>
   );

@@ -1,46 +1,52 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import TextInput from './common/TextInput';
-import Textarea from './common/Textarea';
+import React from "react";
+import PropTypes from "prop-types";
+import TextInput from "./common/TextInput";
+import Textarea from "./common/Textarea";
 
-const MovieForm = ({movie, onSave, onChange}) => {
+const MovieForm = ({ movie, onSave, onChange }) => {
   return (
     <form className="container">
-      <TextInput 
+      <TextInput
         name="name"
         label="Movie"
         value={movie.name}
-        onChange={onChange} />
+        onChange={onChange}
+      />
 
       <TextInput
         name="director"
         label="Director"
         value={movie.director}
-        onChange={onChange} />
+        onChange={onChange}
+      />
 
       <TextInput
         name="released"
         label="Released"
         value={movie.released}
-        onChange={onChange} />
+        onChange={onChange}
+      />
 
       <TextInput
         name="image"
         label="Image URL"
         value={movie.image}
-        onChange={onChange} />
+        onChange={onChange}
+      />
 
       <Textarea
         name="description"
         label="Description"
         value={movie.description}
-        onChange={onChange} />
+        onChange={onChange}
+      />
 
-        <input 
-          type="submit"
-          value={'Save'}
-          className="btn btn-primary"
-          onClick={onSave} />
+      <input
+        type="submit"
+        value={"Save"}
+        className="btn btn-primary"
+        onClick={onSave}
+      />
     </form>
   );
 };

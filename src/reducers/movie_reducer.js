@@ -1,5 +1,5 @@
-import * as types from '../actions/action_types';
-import initialState from './initial_state';
+import * as types from "../actions/action_types";
+import initialState from "./initial_state";
 
 const movieReducer = (state = initialState.movies, action) => {
   switch (action.type) {
@@ -19,9 +19,7 @@ const movieReducer = (state = initialState.movies, action) => {
       ];
 
     case types.DELETE_MOVIE_SUCCESS:
-      return [
-        ...state.filter(movie => movie.id !== action.movie.id)
-      ];
+      return [...state.filter(movie => movie.id !== action.movie.id)];
 
     default:
       return state;

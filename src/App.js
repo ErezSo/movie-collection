@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route , Link } from 'react-router-dom'
-import Movies from './components/Movies';
-import MoviePage from './components/MoviePage';
-import NewMoviePage from './components/NewMoviePage';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Movies from "./components/Movies";
+import MoviePage from "./components/MoviePage";
+import NewMoviePage from "./components/NewMoviePage";
 
 class App extends Component {
   render() {
