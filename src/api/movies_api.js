@@ -3,7 +3,7 @@ const moviesArr = [
     id: 1,
     name: "The Hateful Eight",
     director: "Quentin Tarantino",
-    released: "December 25, 2015",
+    released: "2015",
     image:
       "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
     description:
@@ -13,7 +13,7 @@ const moviesArr = [
     id: 2,
     name: "Reservoir Dogs",
     director: "Quentin Tarantino",
-    released: "October 23, 1992",
+    released: "1992",
     image:
       "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
     description:
@@ -23,7 +23,7 @@ const moviesArr = [
     id: 3,
     name: "God Bless America",
     director: "Bobcat Goldthwait",
-    released: "May 11, 2012",
+    released: "2012",
     image:
       "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
     description:
@@ -33,7 +33,7 @@ const moviesArr = [
     id: 4,
     name: "Annie Hall",
     director: "Woody Allen",
-    released: "April 20, 1977",
+    released: "1977",
     image:
       "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
     description:
