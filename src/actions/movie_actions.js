@@ -1,5 +1,5 @@
 import * as types from "./action_types";
-import moviesApi from "../api/movies_api";
+import { getAllMovies, saveMovies, removeMovie } from "../api/movies_api";
 
 export const loadMoviesSuccess = movies => {
   return { type: types.LOAD_MOVIES_SUCCESS, movies };
@@ -19,8 +19,7 @@ export const deleteMovieSuccess = movie => {
 
 export const loadMovies = () => {
   return dispatch => {
-    return moviesApi
-      .getAllMovies()
+    return getAllMovies()
       .then(movies => {
         dispatch(loadMoviesSuccess(movies));
       })
@@ -32,8 +31,7 @@ export const loadMovies = () => {
 
 export const createMovie = movie => {
   return dispatch => {
-    return moviesApi
-      .saveMovies(movie)
+    return saveMovies(movie)
       .then(responseMovie => {
         dispatch(createMovieSuccess(responseMovie));
       })
@@ -45,8 +43,7 @@ export const createMovie = movie => {
 
 export const updateMovie = movie => {
   return dispatch => {
-    return moviesApi
-      .saveMovies(movie)
+    return saveMovies(movie)
       .then(responseMovie => {
         dispatch(updateMovieSuccess(responseMovie));
       })
@@ -58,8 +55,7 @@ export const updateMovie = movie => {
 
 export const deleteMovie = movie => {
   return dispatch => {
-    return moviesApi
-      .deleteMovie(movie)
+    return removeMovie(movie)
       .then(() => {
         dispatch(deleteMovieSuccess(movie));
       })

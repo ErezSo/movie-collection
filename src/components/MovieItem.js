@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const MovieItem = ({ movie }) => {
@@ -27,14 +26,5 @@ const MovieItem = ({ movie }) => {
     </div>
   )
 }
-
-MovieItem.propTypes = {
-  movie: PropTypes.shape({
-    director: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    released: PropTypes.string.isRequired,
-    image: PropTypes.string
-  }).isRequired
-};
 
 export default MovieItem;

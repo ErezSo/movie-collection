@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as movieActions from "../actions/movie_actions";
 import MovieForm from "./MovieForm";
-import moviesApi from "../api/movies_api";
+import { generateId } from "../api/movies_api";
 
 class NewMoviePage extends React.Component {
   state = {
@@ -20,7 +20,7 @@ class NewMoviePage extends React.Component {
 
   componentWillMount() {
     let movie = this.state.movie;
-    const id = moviesApi.generateId();
+    const id = generateId();
     movie.newId = id;
     this.setState({ movie });
   }

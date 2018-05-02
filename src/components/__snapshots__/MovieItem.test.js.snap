@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieItem renders properly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="movie"
+    style={
+        Object {
+            "float": "left",
+          }
+    }
+>
+    <div
+        className="movie__image"
+    >
+        <Link
+            replace={false}
+            to="/movies/1"
+        >
+            <img
+                alt="The Hateful Eight"
+                src="https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg"
+            />
+        </Link>
+    </div>
+    <div
+        className="movie__info"
+    >
+        <p
+            className="movie-name"
+        >
+            <b>
+                The Hateful Eight
+            </b>
+        </p>
+        <p>
+            Quentin Tarantino
+        </p>
+        <p>
+            December 25, 2015
+        </p>
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="movie"
+      style={
+            Object {
+                  "float": "left",
+                }
+      }
+>
+      <div
+            className="movie__image"
+      >
+            <Link
+                  replace={false}
+                  to="/movies/1"
+            >
+                  <img
+                        alt="The Hateful Eight"
+                        src="https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg"
+                  />
+            </Link>
+      </div>
+      <div
+            className="movie__info"
+      >
+            <p
+                  className="movie-name"
+            >
+                  <b>
+                        The Hateful Eight
+                  </b>
+            </p>
+            <p>
+                  Quentin Tarantino
+            </p>
+            <p>
+                  December 25, 2015
+            </p>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MovieItem
+        movie={
+                Object {
+                        "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                        "director": "Quentin Tarantino",
+                        "id": 1,
+                        "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                        "name": "The Hateful Eight",
+                        "released": "December 25, 2015",
+                      }
+        }
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "movie": Object {
+            "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+            "director": "Quentin Tarantino",
+            "id": 1,
+            "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+            "name": "The Hateful Eight",
+            "released": "December 25, 2015",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="movie"
+          style={
+                    Object {
+                              "float": "left",
+                            }
+          }
+>
+          <div
+                    className="movie__image"
+          >
+                    <Link
+                              replace={false}
+                              to="/movies/1"
+                    >
+                              <img
+                                        alt="The Hateful Eight"
+                                        src="https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg"
+                              />
+                    </Link>
+          </div>
+          <div
+                    className="movie__info"
+          >
+                    <p
+                              className="movie-name"
+                    >
+                              <b>
+                                        The Hateful Eight
+                              </b>
+                    </p>
+                    <p>
+                              Quentin Tarantino
+                    </p>
+                    <p>
+                              December 25, 2015
+                    </p>
+          </div>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          className="movie"
+          style={
+                    Object {
+                              "float": "left",
+                            }
+          }
+>
+          <div
+                    className="movie__image"
+          >
+                    <Link
+                              replace={false}
+                              to="/movies/1"
+                    >
+                              <img
+                                        alt="The Hateful Eight"
+                                        src="https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg"
+                              />
+                    </Link>
+          </div>
+          <div
+                    className="movie__info"
+          >
+                    <p
+                              className="movie-name"
+                    >
+                              <b>
+                                        The Hateful Eight
+                              </b>
+                    </p>
+                    <p>
+                              Quentin Tarantino
+                    </p>
+                    <p>
+                              December 25, 2015
+                    </p>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MovieItem
+    movie={
+        Object {
+            "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+            "director": "Quentin Tarantino",
+            "id": 1,
+            "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+            "name": "The Hateful Eight",
+            "released": "December 25, 2015",
+          }
+    }
+/>,
+}
+`;

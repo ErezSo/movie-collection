@@ -1,30 +1,18 @@
-import React from 'react';
-import test from 'tape';
-import { shallow } from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
+import MovieItem from "./MovieItem";
+import data from "../data.json";
 
-import MovieItem from './MovieItem';
+const { movies } = data;
 
-test('MovieItem', assert => {
-  const msg = 'MovieItem should render movie name';
-
-  const movie = {
-    name: 'The Thing',
-    director: 'John Carpenter',
-    released: '1982',
-    id: 8
-  }
-
-  const props = {
-    movie
-  };
-
-  const $ = shallow(<MovieItem movie={props.movie} />);
-  const re = new RegExp(movie.name, 'g');
-  const output = $.find('.movie-name').html();
-
-  const actual = re.test(output);
-  const expected = true;
-
-  assert.equal(actual, expected, msg);
-  assert.end();
+describe("MovieItem", () => {
+  const movie = movies[0];
+  it("should render", () => {
+    const wrapper = shallow(<MovieItem movie={movie} />);
+    expect(wrapper).toHaveLength(1);
+  });
+  it("renders properly", () => {
+    const tree = shallow(<MovieItem movie={movie} />);
+    expect(tree).toMatchSnapshot();
+  });
 });
