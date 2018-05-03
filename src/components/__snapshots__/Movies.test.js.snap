@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movies renders properly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <h2
+        className="movies__header"
+    >
+        Movies
+    </h2>
+    <Link
+        className="btn btn-success"
+        replace={false}
+        to="/movies/new"
+    >
+        <span>
+            Add Movie
+        </span>
+    </Link>
+    <hr />
+    <div
+        className="movies"
+    >
+        <MovieItem
+            movie={
+                Object {
+                    "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                    "director": "Quentin Tarantino",
+                    "id": 1,
+                    "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                    "name": "The Hateful Eight",
+                    "released": "December 25, 2015",
+                  }
+            }
+        />
+        <MovieItem
+            movie={
+                Object {
+                    "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+                    "director": "Quentin Tarantino",
+                    "id": 2,
+                    "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+                    "name": "Reservoir Dogs",
+                    "released": "October 23, 1992",
+                  }
+            }
+        />
+        <MovieItem
+            movie={
+                Object {
+                    "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+                    "director": "Bobcat Goldthwait",
+                    "id": 3,
+                    "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+                    "name": "God Bless America",
+                    "released": "May 11, 2012",
+                  }
+            }
+        />
+        <MovieItem
+            movie={
+                Object {
+                    "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+                    "director": "Woody Allen",
+                    "id": 4,
+                    "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+                    "name": "Annie Hall",
+                    "released": "April 20, 1977",
+                  }
+            }
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div>
+      <h2
+            className="movies__header"
+      >
+            Movies
+      </h2>
+      <Link
+            className="btn btn-success"
+            replace={false}
+            to="/movies/new"
+      >
+            <span>
+                  Add Movie
+            </span>
+      </Link>
+      <hr />
+      <div
+            className="movies"
+      >
+            <MovieItem
+                  movie={
+                        Object {
+                              "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                              "director": "Quentin Tarantino",
+                              "id": 1,
+                              "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                              "name": "The Hateful Eight",
+                              "released": "December 25, 2015",
+                            }
+                  }
+            />
+            <MovieItem
+                  movie={
+                        Object {
+                              "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+                              "director": "Quentin Tarantino",
+                              "id": 2,
+                              "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+                              "name": "Reservoir Dogs",
+                              "released": "October 23, 1992",
+                            }
+                  }
+            />
+            <MovieItem
+                  movie={
+                        Object {
+                              "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+                              "director": "Bobcat Goldthwait",
+                              "id": 3,
+                              "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+                              "name": "God Bless America",
+                              "released": "May 11, 2012",
+                            }
+                  }
+            />
+            <MovieItem
+                  movie={
+                        Object {
+                              "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+                              "director": "Woody Allen",
+                              "id": 4,
+                              "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+                              "name": "Annie Hall",
+                              "released": "April 20, 1977",
+                            }
+                  }
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Movies
+        movies={
+                Array [
+                        Object {
+                          "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                          "director": "Quentin Tarantino",
+                          "id": 1,
+                          "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                          "name": "The Hateful Eight",
+                          "released": "December 25, 2015",
+                        },
+                        Object {
+                          "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+                          "director": "Quentin Tarantino",
+                          "id": 2,
+                          "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+                          "name": "Reservoir Dogs",
+                          "released": "October 23, 1992",
+                        },
+                        Object {
+                          "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+                          "director": "Bobcat Goldthwait",
+                          "id": 3,
+                          "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+                          "name": "God Bless America",
+                          "released": "May 11, 2012",
+                        },
+                        Object {
+                          "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+                          "director": "Woody Allen",
+                          "id": 4,
+                          "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+                          "name": "Annie Hall",
+                          "released": "April 20, 1977",
+                        },
+                      ]
+        }
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "movies": Array [
+            Object {
+              "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+              "director": "Quentin Tarantino",
+              "id": 1,
+              "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+              "name": "The Hateful Eight",
+              "released": "December 25, 2015",
+            },
+            Object {
+              "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+              "director": "Quentin Tarantino",
+              "id": 2,
+              "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+              "name": "Reservoir Dogs",
+              "released": "October 23, 1992",
+            },
+            Object {
+              "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+              "director": "Bobcat Goldthwait",
+              "id": 3,
+              "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+              "name": "God Bless America",
+              "released": "May 11, 2012",
+            },
+            Object {
+              "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+              "director": "Woody Allen",
+              "id": 4,
+              "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+              "name": "Annie Hall",
+              "released": "April 20, 1977",
+            },
+          ],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <h2
+                    className="movies__header"
+          >
+                    Movies
+          </h2>
+          <Link
+                    className="btn btn-success"
+                    replace={false}
+                    to="/movies/new"
+          >
+                    <span>
+                              Add Movie
+                    </span>
+          </Link>
+          <hr />
+          <div
+                    className="movies"
+          >
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                                                  "director": "Quentin Tarantino",
+                                                  "id": 1,
+                                                  "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                                                  "name": "The Hateful Eight",
+                                                  "released": "December 25, 2015",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+                                                  "director": "Quentin Tarantino",
+                                                  "id": 2,
+                                                  "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+                                                  "name": "Reservoir Dogs",
+                                                  "released": "October 23, 1992",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+                                                  "director": "Bobcat Goldthwait",
+                                                  "id": 3,
+                                                  "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+                                                  "name": "God Bless America",
+                                                  "released": "May 11, 2012",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+                                                  "director": "Woody Allen",
+                                                  "id": 4,
+                                                  "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+                                                  "name": "Annie Hall",
+                                                  "released": "April 20, 1977",
+                                                }
+                              }
+                    />
+          </div>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div>
+          <h2
+                    className="movies__header"
+          >
+                    Movies
+          </h2>
+          <Link
+                    className="btn btn-success"
+                    replace={false}
+                    to="/movies/new"
+          >
+                    <span>
+                              Add Movie
+                    </span>
+          </Link>
+          <hr />
+          <div
+                    className="movies"
+          >
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+                                                  "director": "Quentin Tarantino",
+                                                  "id": 1,
+                                                  "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+                                                  "name": "The Hateful Eight",
+                                                  "released": "December 25, 2015",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+                                                  "director": "Quentin Tarantino",
+                                                  "id": 2,
+                                                  "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+                                                  "name": "Reservoir Dogs",
+                                                  "released": "October 23, 1992",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+                                                  "director": "Bobcat Goldthwait",
+                                                  "id": 3,
+                                                  "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+                                                  "name": "God Bless America",
+                                                  "released": "May 11, 2012",
+                                                }
+                              }
+                    />
+                    <MovieItem
+                              movie={
+                                        Object {
+                                                  "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+                                                  "director": "Woody Allen",
+                                                  "id": 4,
+                                                  "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+                                                  "name": "Annie Hall",
+                                                  "released": "April 20, 1977",
+                                                }
+                              }
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Movies
+    movies={
+        Array [
+            Object {
+              "description": "Set six or eight or twelve years after the Civil War, a stagecoach hurtles through the wintry Wyoming landscape. The passengers, bounty hunter John Ruth and his fugitive Daisy Domergue, race towards the town of Red Rock where Ruth, known in these parts as The Hangman, will bring Domergue to justice. Along the road, they encounter two strangers: Major Marquis Warren, a black former union soldier turned infamous bounty hunter, and Chris Mannix, a southern renegade who claims to be the town's new Sheriff. Losing their lead on the blizzard, Ruth, Domergue, Warren and Mannix seek refuge at Minnie's Haberdashery, a stagecoach stopover on a mountain pass. When they arrive at Minnie's, they are greeted not by the proprietor but by four unfamiliar faces. Bob, who's taking care of Minnie's while she's visiting her mother, is holed up with Oswaldo Mobray, the hangman of Red Rock, cow-puncher Joe Gage (Madsen), and Confederate General Sanford Smithers. As the storm overtakes the mountainside stopover, our eight travelers come to learn they may not make it to Red Rock after all...",
+              "director": "Quentin Tarantino",
+              "id": 1,
+              "image": "https://image.tmdb.org/t/p/original/fqe8JxDNO8B8QfOGTdjh6sPCdSC.jpg",
+              "name": "The Hateful Eight",
+              "released": "December 25, 2015",
+            },
+            Object {
+              "description": "In 1992, Reservoir Dogs transformed Quentin Tarantino practically overnight from an obscure, unproduced screenwriter and part-time actor to the most influential new filmmaker of the 1990s. The story looks at what happens before and after (but not during) a botched jewelry store robbery organized by Joe Cabot (Lawrence Tierney). Mr. White (Harvey Keitel) is a career criminal who takes a liking to newcomer Mr. Orange (Tim Roth) and enjoys showing him the ropes. Mr. Pink (Steve Buscemi) is a weaselly loner obsessed with professionalism. Mr. Blonde (Michael Madsen) has just gotten out of jail after taking the rap on a job for Cabot; he's grateful for the work but isn't the same person he used to be. While Mr. Blonde goes nuts during the heist, the thieves are surprised by the sudden arrival of the police, and Mr. Pink is convinced one of their team is a cop. So who's the rat? What do they do about Mr. Blonde? And what do they do with Mr. Orange, who took a bullet in the gut and is slowly bleeding to death? Reservoir Dogs jumps back and forth between pre- and post-robbery events, occasionally putting the narrative on pause to let the characters discuss such topics as the relative importance of tipping, who starred in Get Christie Love!, and what to do when you enter a men's room full of cops carrying a briefcase full of marijuana. ~ Mark Deming, Rovi",
+              "director": "Quentin Tarantino",
+              "id": 2,
+              "image": "https://image.tmdb.org/t/p/original/tB2ITHg556e7aTV6cqQqVAXkdxN.jpg",
+              "name": "Reservoir Dogs",
+              "released": "October 23, 1992",
+            },
+            Object {
+              "description": "Frank (Joel Murray) has had enough of the downward spiral of American culture. Divorced, recently fired, and possibly terminally ill, Frank truly has nothing left to live for. But instead of taking his own life, he buys a gun and decides to take out his frustration on the cruelest, stupidest, most intolerant people he can imagine -- starting with some particularly odious reality television stars. Frank finds an unusual accomplice in a high-school student named Roxy (Tara Lynne Barr), who shares his sense of rage and disenfranchisement. Together they embark on a nationwide assault on our country's most irritating celebrities.",
+              "director": "Bobcat Goldthwait",
+              "id": 3,
+              "image": "https://image.tmdb.org/t/p/original/nVJPpafbPOxTLVZXzTkb3LRRo2N.jpg",
+              "name": "God Bless America",
+              "released": "May 11, 2012",
+            },
+            Object {
+              "description": "Annie Hall is a comical look at the up and down relationship between a New York City TV writer and his aspiring actress/singer girlfriend who's originally from the Midwest.",
+              "director": "Woody Allen",
+              "id": 4,
+              "image": "https://image.tmdb.org/t/p/original/iE1MVapfo2JC9RzrdjiMsEzw1Co.jpg",
+              "name": "Annie Hall",
+              "released": "April 20, 1977",
+            },
+          ]
+    }
+/>,
+}
+`;

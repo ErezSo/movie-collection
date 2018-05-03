@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviePage renders properly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <div
+        className="movie-title"
+    >
+        <h2 />
+        <hr />
+    </div>
+    <div
+        className="movie-container"
+    >
+        <div
+            className="movie-image"
+        >
+            <img
+                alt="Movie"
+                src=""
+                style={
+                    Object {
+                        "height": "auto",
+                        "width": "75%",
+                      }
+                }
+            />
+        </div>
+        <div
+            className="movie-information"
+            style={
+                Object {
+                    "width": "100%",
+                  }
+            }
+        >
+            <p>
+                <b>
+                    Director:
+                </b>
+                 
+                
+            </p>
+            <p>
+                <b>
+                    Release Date:
+                </b>
+                 
+                
+            </p>
+            <p>
+                <b>
+                    Description:
+                </b>
+                 
+                
+                 
+            </p>
+            <button
+                className="btn btn-default"
+                onClick={[Function]}
+            >
+                Edit
+            </button>
+            <button
+                className="btn btn-danger"
+                onClick={[Function]}
+            >
+                Delete
+            </button>
+        </div>
+    </div>
+</div>,
+  "nodes": Array [
+    <div>
+      <div
+            className="movie-title"
+      >
+            <h2 />
+            <hr />
+      </div>
+      <div
+            className="movie-container"
+      >
+            <div
+                  className="movie-image"
+            >
+                  <img
+                        alt="Movie"
+                        src=""
+                        style={
+                              Object {
+                                    "height": "auto",
+                                    "width": "75%",
+                                  }
+                        }
+                  />
+            </div>
+            <div
+                  className="movie-information"
+                  style={
+                        Object {
+                              "width": "100%",
+                            }
+                  }
+            >
+                  <p>
+                        <b>
+                              Director:
+                        </b>
+                         
+                        
+                  </p>
+                  <p>
+                        <b>
+                              Release Date:
+                        </b>
+                         
+                        
+                  </p>
+                  <p>
+                        <b>
+                              Description:
+                        </b>
+                         
+                        
+                         
+                  </p>
+                  <button
+                        className="btn btn-default"
+                        onClick={[Function]}
+                  >
+                        Edit
+                  </button>
+                  <button
+                        className="btn btn-danger"
+                        onClick={[Function]}
+                  >
+                        Delete
+                  </button>
+            </div>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <MoviePage
+        actions={
+                Object {
+                        "createMovie": [Function],
+                        "deleteMovie": [Function],
+                        "loadMovies": [Function],
+                        "updateMovie": [Function],
+                      }
+        }
+        movie={
+                Object {
+                        "description": "",
+                        "director": "",
+                        "image": "",
+                        "name": "",
+                        "released": "",
+                      }
+        }
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": MoviePage {
+        "_reactInternalInstance": [Circular],
+        "componentWillReceiveProps": [Function],
+        "context": Object {},
+        "deleteMovie": [Function],
+        "props": Object {
+          "actions": Object {
+            "createMovie": [Function],
+            "deleteMovie": [Function],
+            "loadMovies": [Function],
+            "updateMovie": [Function],
+          },
+          "movie": Object {
+            "description": "",
+            "director": "",
+            "image": "",
+            "name": "",
+            "released": "",
+          },
+        },
+        "refs": Object {},
+        "state": Object {
+          "isEditing": false,
+          "movie": Object {
+            "description": "",
+            "director": "",
+            "image": "",
+            "name": "",
+            "released": "",
+          },
+        },
+        "toggleEdit": [Function],
+        "updateMovie": [Function],
+        "updateMovieState": [Function],
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <div
+                    className="movie-title"
+          >
+                    <h2 />
+                    <hr />
+          </div>
+          <div
+                    className="movie-container"
+          >
+                    <div
+                              className="movie-image"
+                    >
+                              <img
+                                        alt="Movie"
+                                        src=""
+                                        style={
+                                                  Object {
+                                                            "height": "auto",
+                                                            "width": "75%",
+                                                          }
+                                        }
+                              />
+                    </div>
+                    <div
+                              className="movie-information"
+                              style={
+                                        Object {
+                                                  "width": "100%",
+                                                }
+                              }
+                    >
+                              <p>
+                                        <b>
+                                                  Director:
+                                        </b>
+                                         
+                                        
+                              </p>
+                              <p>
+                                        <b>
+                                                  Release Date:
+                                        </b>
+                                         
+                                        
+                              </p>
+                              <p>
+                                        <b>
+                                                  Description:
+                                        </b>
+                                         
+                                        
+                                         
+                              </p>
+                              <button
+                                        className="btn btn-default"
+                                        onClick={[Function]}
+                              >
+                                        Edit
+                              </button>
+                              <button
+                                        className="btn btn-danger"
+                                        onClick={[Function]}
+                              >
+                                        Delete
+                              </button>
+                    </div>
+          </div>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div>
+          <div
+                    className="movie-title"
+          >
+                    <h2 />
+                    <hr />
+          </div>
+          <div
+                    className="movie-container"
+          >
+                    <div
+                              className="movie-image"
+                    >
+                              <img
+                                        alt="Movie"
+                                        src=""
+                                        style={
+                                                  Object {
+                                                            "height": "auto",
+                                                            "width": "75%",
+                                                          }
+                                        }
+                              />
+                    </div>
+                    <div
+                              className="movie-information"
+                              style={
+                                        Object {
+                                                  "width": "100%",
+                                                }
+                              }
+                    >
+                              <p>
+                                        <b>
+                                                  Director:
+                                        </b>
+                                         
+                                        
+                              </p>
+                              <p>
+                                        <b>
+                                                  Release Date:
+                                        </b>
+                                         
+                                        
+                              </p>
+                              <p>
+                                        <b>
+                                                  Description:
+                                        </b>
+                                         
+                                        
+                                         
+                              </p>
+                              <button
+                                        className="btn btn-default"
+                                        onClick={[Function]}
+                              >
+                                        Edit
+                              </button>
+                              <button
+                                        className="btn btn-danger"
+                                        onClick={[Function]}
+                              >
+                                        Delete
+                              </button>
+                    </div>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MoviePage
+    actions={
+        Object {
+            "createMovie": [Function],
+            "deleteMovie": [Function],
+            "loadMovies": [Function],
+            "updateMovie": [Function],
+          }
+    }
+    movie={
+        Object {
+            "description": "",
+            "director": "",
+            "image": "",
+            "name": "",
+            "released": "",
+          }
+    }
+/>,
+}
+`;

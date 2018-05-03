@@ -43,7 +43,7 @@ const MovieForm = ({ movie, onSave, onChange }) => {
 
       <input
         type="submit"
-        value={"Save"}
+        value="Save"
         className="btn btn-primary"
         onClick={onSave}
       />

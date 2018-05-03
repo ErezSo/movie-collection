@@ -4,12 +4,19 @@ import Movies from "./components/Movies";
 import MoviePage from "./components/MoviePage";
 import NewMoviePage from "./components/NewMoviePage";
 
+const styles = {
+  header: {
+    marginTop: 0,
+    padding: "20px 0"
+  }
+};
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
-          <div className="App-header">
+          <div className="App-header" style={styles.header}>
             <h2>My Movie Collection</h2>
             <Link to="/">Home</Link>
           </div>

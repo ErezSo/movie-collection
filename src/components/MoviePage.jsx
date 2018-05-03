@@ -4,14 +4,23 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as movieActions from "../actions/movie_actions";
 import MovieForm from "./MovieForm";
+import styled from "styled-components";
 
-class MoviePage extends React.Component {
+const Image = styled.img`
+  width: 75%;
+  height: auto;
+`;
+
+const Info = styled.div`
+  width: 100%;
+`;
+
+export class MoviePage extends React.Component {
   state = {
     isEditing: false,
     movie: this.props.movie
   };
 
-  // In case the state been changed after render
   componentWillReceiveProps = nextProps => {
     if (this.props.movie.id !== nextProps.movie.id) {
       this.setState({ movie: nextProps.movie });
@@ -28,10 +37,12 @@ class MoviePage extends React.Component {
   };
 
   updateMovieState = event => {
-    const field = event.target.name;
-    let movie = this.state.movie;
-    movie[field] = event.target.value;
-    return this.setState({ movie });
+    const { name: field } = event.target;
+    const newMovie = {
+      ...this.state.movie,
+      [field]: event.target.value
+    };
+    return this.setState({ movie: newMovie });
   };
 
   updateMovie = event => {
@@ -42,6 +53,9 @@ class MoviePage extends React.Component {
 
   render() {
     const { movie } = this.state;
+    const {
+      movie: { name, image, director, released, description }
+    } = this.props;
     if (this.state.isEditing) {
       return (
         <div>
@@ -56,31 +70,22 @@ class MoviePage extends React.Component {
     return (
       <div>
         <div className="movie-title">
-          <h2>
-            {this.props.movie.name}
-          </h2>
-
+          <h2>{name}</h2>
           <hr />
         </div>
-
         <div className="movie-container">
           <div className="movie-image">
-            <img
-              src={this.props.movie.image}
-              alt=""
-              style={{ width: "75%", height: "auto" }}
-            />
+            <Image src={image} alt="Movie" />
           </div>
-
-          <div className="movie-information" style={{ height: "100%" }}>
+          <Info className="movie-information">
             <p>
-              <b>Director:</b> {this.props.movie.director}
+              <b>Director:</b> {director}
             </p>
             <p>
-              <b>Release Date:</b> {this.props.movie.released}
+              <b>Release Date:</b> {released}
             </p>
             <p>
-              <b>Description:</b> {this.props.movie.description}{" "}
+              <b>Description:</b> {description}{" "}
             </p>
             <button className="btn btn-default" onClick={this.toggleEdit}>
               Edit
@@ -88,7 +93,7 @@ class MoviePage extends React.Component {
             <button className="btn btn-danger" onClick={this.deleteMovie}>
               Delete
             </button>
-          </div>
+          </Info>
         </div>
       </div>
     );
@@ -96,7 +101,15 @@ class MoviePage extends React.Component {
 }
 
 MoviePage.propTypes = {
-  movie: PropTypes.object.isRequired,
+  movie: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    director: PropTypes.string.isRequired,
+    released: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.number,
+    newId: PropTypes.number
+  }).isRequired,
   actions: PropTypes.object.isRequired,
   history: PropTypes.object
 };

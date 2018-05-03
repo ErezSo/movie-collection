@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textinput renders properly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="form-group"
+>
+    <label
+        htmlFor="name"
+    >
+        label
+    </label>
+    <div
+        className="field"
+    >
+        <input
+            className="form-control"
+            name="name"
+            onChange={[Function]}
+            placeholder="placeholder"
+            style={
+                Object {
+                    "width": "30%",
+                  }
+            }
+            type="text"
+            value="value"
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="form-group"
+>
+      <label
+            htmlFor="name"
+      >
+            label
+      </label>
+      <div
+            className="field"
+      >
+            <input
+                  className="form-control"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="placeholder"
+                  style={
+                        Object {
+                              "width": "30%",
+                            }
+                  }
+                  type="text"
+                  value="value"
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <TextInput
+        label="label"
+        name="name"
+        onChange={[Function]}
+        placeholder="placeholder"
+        value="value"
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "label": "label",
+          "name": "name",
+          "onChange": [Function],
+          "placeholder": "placeholder",
+          "value": "value",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="form-group"
+>
+          <label
+                    htmlFor="name"
+          >
+                    label
+          </label>
+          <div
+                    className="field"
+          >
+                    <input
+                              className="form-control"
+                              name="name"
+                              onChange={[Function]}
+                              placeholder="placeholder"
+                              style={
+                                        Object {
+                                                  "width": "30%",
+                                                }
+                              }
+                              type="text"
+                              value="value"
+                    />
+          </div>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          className="form-group"
+>
+          <label
+                    htmlFor="name"
+          >
+                    label
+          </label>
+          <div
+                    className="field"
+          >
+                    <input
+                              className="form-control"
+                              name="name"
+                              onChange={[Function]}
+                              placeholder="placeholder"
+                              style={
+                                        Object {
+                                                  "width": "30%",
+                                                }
+                              }
+                              type="text"
+                              value="value"
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <TextInput
+    label="label"
+    name="name"
+    onChange={[Function]}
+    placeholder="placeholder"
+    value="value"
+/>,
+}
+`;
